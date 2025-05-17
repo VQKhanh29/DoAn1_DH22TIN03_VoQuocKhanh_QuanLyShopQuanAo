@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace QuanLyShopQuanAo
 {
-    public partial class Form1: Form
+    public partial class frmMain: Form
     {
-        public Form1()
+        public bool isThoat = true;
+        
+        public frmMain()
         {
             InitializeComponent();
         }
+
+        public event EventHandler DangXuat;
+        private void mnuDangxuat_Click(object sender, EventArgs e)
+        {
+            DangXuat(this, new EventArgs());
+        }
+
+       
     }
 }
