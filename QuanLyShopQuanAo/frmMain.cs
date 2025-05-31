@@ -32,9 +32,22 @@ namespace QuanLyShopQuanAo
 
         private void mnDanhmucSP_Click(object sender, EventArgs e)
         {
-            frmDanhMucSanPham frm = new frmDanhMucSanPham();
+            frmDanhMucSP frm = new frmDanhMucSP();
             frm.ShowDialog();
         }
-     
+
+        private void mnuSanpham_Click(object sender, EventArgs e)
+        {
+            frmSanPham frm = new frmSanPham();
+            frm.MdiParent = this; // Thiết lập frmSanPham là con của frmMain
+            frm.Show();
+        }
+
+        private void mnuNhanvien_Click(object sender, EventArgs e)
+        {
+            frmNhanVien frm = new frmNhanVien();
+            frm.MdiParent = this; // Thiết lập frmNhanVien là con của frmMain
+            frm.Show();
+        }
     }
 }

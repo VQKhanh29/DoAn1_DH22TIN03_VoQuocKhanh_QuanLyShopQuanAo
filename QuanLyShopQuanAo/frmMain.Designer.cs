@@ -30,8 +30,8 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnDanhmucSP = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuNhanvien = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuSanpham = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuNhanvien = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuKhach = new System.Windows.Forms.ToolStripMenuItem();
             this.hóaĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHoadon = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,8 +49,8 @@
             this.mnuNhanvien,
             this.mnuKhach,
             this.hóaĐơnToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.thoátToolStripMenuItem});
+            this.thoátToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -64,18 +64,19 @@
             this.mnDanhmucSP.Text = "&Danh mục sản phẩm";
             this.mnDanhmucSP.Click += new System.EventHandler(this.mnDanhmucSP_Click);
             // 
-            // mnuNhanvien
-            // 
-            this.mnuNhanvien.Name = "mnuNhanvien";
-            this.mnuNhanvien.Size = new System.Drawing.Size(73, 20);
-            this.mnuNhanvien.Text = "&Nhân viên";
-            // 
             // mnuSanpham
             // 
             this.mnuSanpham.Name = "mnuSanpham";
             this.mnuSanpham.Size = new System.Drawing.Size(72, 20);
             this.mnuSanpham.Text = "&Sản phẩm";
-           
+            this.mnuSanpham.Click += new System.EventHandler(this.mnuSanpham_Click);
+            // 
+            // mnuNhanvien
+            // 
+            this.mnuNhanvien.Name = "mnuNhanvien";
+            this.mnuNhanvien.Size = new System.Drawing.Size(73, 20);
+            this.mnuNhanvien.Text = "&Nhân viên";
+            this.mnuNhanvien.Click += new System.EventHandler(this.mnuNhanvien_Click);
             // 
             // mnuKhach
             // 
@@ -94,7 +95,7 @@
             // mnuHoadon
             // 
             this.mnuHoadon.Name = "mnuHoadon";
-            this.mnuHoadon.Size = new System.Drawing.Size(145, 22);
+            this.mnuHoadon.Size = new System.Drawing.Size(180, 22);
             this.mnuHoadon.Text = "&Xuất hóa đơn";
             // 
             // toolStripMenuItem1
@@ -122,10 +123,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::QuanLyShopQuanAo.Properties.Resources.megalucario1920x1200;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

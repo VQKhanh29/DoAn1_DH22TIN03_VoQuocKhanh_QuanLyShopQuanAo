@@ -60,10 +60,11 @@
             this.btnDong.Location = new System.Drawing.Point(280, 129);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(84, 23);
-            this.btnDong.TabIndex = 3;
+            this.btnDong.TabIndex = 4;
             this.btnDong.Text = "ĐÓNG";
             this.btnDong.UseVisualStyleBackColor = true;
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
+            this.btnDong.KeyUp += new System.Windows.Forms.KeyEventHandler(this.btnDong_KeyUp);
             // 
             // btnDangnhap
             // 
@@ -74,6 +75,7 @@
             this.btnDangnhap.Text = "ĐĂNG NHẬP";
             this.btnDangnhap.UseVisualStyleBackColor = true;
             this.btnDangnhap.Click += new System.EventHandler(this.btnDangnhap_Click);
+            this.btnDangnhap.KeyUp += new System.Windows.Forms.KeyEventHandler(this.btnDangnhap_KeyUp);
             // 
             // txtMatkhau
             // 
@@ -81,13 +83,15 @@
             this.txtMatkhau.Name = "txtMatkhau";
             this.txtMatkhau.Size = new System.Drawing.Size(100, 20);
             this.txtMatkhau.TabIndex = 2;
+            this.txtMatkhau.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtMatkhau_KeyUp);
             // 
             // txtTaikhoang
             // 
             this.txtTaikhoang.Location = new System.Drawing.Point(169, 26);
             this.txtTaikhoang.Name = "txtTaikhoang";
             this.txtTaikhoang.Size = new System.Drawing.Size(100, 20);
-            this.txtTaikhoang.TabIndex = 2;
+            this.txtTaikhoang.TabIndex = 1;
+            this.txtTaikhoang.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtTaikhoang_KeyUp);
             // 
             // label3
             // 
