@@ -71,6 +71,8 @@
             this.lblSoluong = new System.Windows.Forms.Label();
             this.lblMasanpham = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnDong = new System.Windows.Forms.Button();
+            this.btnBoqua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
@@ -95,7 +97,7 @@
             this.panel1.Controls.Add(this.cbMaHD);
             this.panel1.Controls.Add(this.lblMahoadon);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 410);
+            this.panel1.Location = new System.Drawing.Point(0, 414);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 40);
             this.panel1.TabIndex = 0;
@@ -145,8 +147,8 @@
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.splitContainer1.Panel2.Controls.Add(this.groupBox2);
             this.splitContainer1.Panel2.Enabled = false;
-            this.splitContainer1.Size = new System.Drawing.Size(800, 410);
-            this.splitContainer1.SplitterDistance = 176;
+            this.splitContainer1.Size = new System.Drawing.Size(800, 414);
+            this.splitContainer1.SplitterDistance = 177;
             this.splitContainer1.TabIndex = 1;
             // 
             // label1
@@ -491,6 +493,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnDong);
+            this.panel2.Controls.Add(this.btnBoqua);
             this.panel2.Controls.Add(this.btnLuu);
             this.panel2.Controls.Add(this.btnXoa);
             this.panel2.Controls.Add(this.btnSua);
@@ -501,43 +505,63 @@
             this.panel2.Size = new System.Drawing.Size(766, 29);
             this.panel2.TabIndex = 0;
             // 
+            // btnDong
+            // 
+            this.btnDong.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnDong.Location = new System.Drawing.Point(659, 3);
+            this.btnDong.Name = "btnDong";
+            this.btnDong.Size = new System.Drawing.Size(75, 23);
+            this.btnDong.TabIndex = 36;
+            this.btnDong.Text = "Đóng";
+            this.btnDong.UseVisualStyleBackColor = false;
+            // 
+            // btnBoqua
+            // 
+            this.btnBoqua.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnBoqua.Location = new System.Drawing.Point(537, 3);
+            this.btnBoqua.Name = "btnBoqua";
+            this.btnBoqua.Size = new System.Drawing.Size(75, 23);
+            this.btnBoqua.TabIndex = 35;
+            this.btnBoqua.Text = "Bỏ qua";
+            this.btnBoqua.UseVisualStyleBackColor = false;
+            // 
             // btnLuu
             // 
             this.btnLuu.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnLuu.Location = new System.Drawing.Point(629, 4);
+            this.btnLuu.Location = new System.Drawing.Point(415, 3);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
-            this.btnLuu.TabIndex = 15;
+            this.btnLuu.TabIndex = 34;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
             // 
             // btnXoa
             // 
             this.btnXoa.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnXoa.Location = new System.Drawing.Point(437, 4);
+            this.btnXoa.Location = new System.Drawing.Point(287, 3);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 23);
-            this.btnXoa.TabIndex = 14;
+            this.btnXoa.TabIndex = 33;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
             // 
             // btnSua
             // 
             this.btnSua.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnSua.Location = new System.Drawing.Point(243, 4);
+            this.btnSua.Location = new System.Drawing.Point(160, 3);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 23);
-            this.btnSua.TabIndex = 13;
+            this.btnSua.TabIndex = 32;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
             // 
             // btnThem
             // 
             this.btnThem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnThem.Location = new System.Drawing.Point(63, 4);
+            this.btnThem.Location = new System.Drawing.Point(32, 3);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 23);
-            this.btnThem.TabIndex = 12;
+            this.btnThem.TabIndex = 31;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
             // 
@@ -545,10 +569,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 454);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.panel1);
             this.Name = "frmHoaDon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hóa Đơn";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -609,14 +634,16 @@
         private System.Windows.Forms.Label lblDongia;
         private System.Windows.Forms.Label lblGiamgia;
         private System.Windows.Forms.Label lblTensanpham;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.DataGridView dgvHoadon;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txtTongtien;
         private System.Windows.Forms.Label lblTongtien;
         private System.Windows.Forms.Label lblBangchu;
+        private System.Windows.Forms.Button btnDong;
+        private System.Windows.Forms.Button btnBoqua;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnThem;
     }
 }

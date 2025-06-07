@@ -49,5 +49,19 @@ namespace QuanLyShopQuanAo
             frm.MdiParent = this; // Thiết lập frmNhanVien là con của frmMain
             frm.Show();
         }
+
+        private void mnuKhach_Click(object sender, EventArgs e)
+        {
+            frmKhachHang frm = new frmKhachHang();
+            frm.MdiParent = this; // Thiết lập frmKhachHang là con của frmMain
+            frm.Show();
+        }
+
+        private void mnuHoadon_Click(object sender, EventArgs e)
+        {
+            frmHoaDon frm = new frmHoaDon();
+            frm.MdiParent = this; // Thiết lập frmHoaDon là con của frmMain
+            frm.Show();
+        }
     }
 }
